@@ -1,4 +1,4 @@
-# 【Java入門】System.out.println()でHello Worldを出力する方法 
+# 【Java入門】System.out.println()でHello Worldを出力する方法
 
 ## はじめに
 
@@ -16,6 +16,8 @@ Javaでは、`System.out.println()`を使用することで、文字列や数値
 - `print()`と`println()`の違い
 - 初心者が間違えやすいポイント
 
+<br><br>
+
 ## Javaプログラムの基本構造
 
 Javaでプログラムを書くとき、まず登場するのが次のようなコードです。
@@ -30,6 +32,8 @@ public class Main {
 
 これは、**`Main`という名前のクラスを定義しているコード**です。
 
+<br>
+
 ### クラスとは？
 
 クラスとは、プログラムで扱うデータや処理をまとめるための仕組みです。
@@ -38,6 +42,8 @@ Javaでは、基本的にクラスの中にメソッドなどを定義してプ�
 メソッドとは、特定の処理をまとめたものです。
 
 今回のような簡単なプログラムでは、まず「クラスはプログラムを構成するための基本的なまとまり」と理解しておけば十分です。
+
+<br>
 
 ### public class Mainの意味
 
@@ -56,6 +62,8 @@ Javaでは、基本的にクラスの中にメソッドなどを定義してプ�
 
 今回の場合、ファイル名は`Main.java`になります。
 
+<br>
+
 ### 波括弧 { } の役割
 
 Javaでは、`{`と`}`を使って処理や定義の範囲を表します。
@@ -72,6 +80,8 @@ public class Main {
 しかし、まだ実行する処理が書かれていないため、今回の方法ではプログラムを開始できません。
 
 そこで必要になるのが、次に説明する`main`メソッドです。
+
+<br><br>
 
 ## mainメソッドとは？
 
@@ -99,8 +109,9 @@ public class Main {
 
 また、オブジェクトとは、クラスをもとに作られる実体のことです。<br>
 これらの詳しい仕組みは、今後のメソッドやオブジェクト指向の学習で扱います。
-
 今は、**`main`メソッドの中に書いた処理が、プログラムを実行したときに呼び出される**という点を押さえておきましょう。
+
+<br><br>
 
 ## System.out.println()とは？
 
@@ -123,6 +134,8 @@ Hello World
 
 `println()`には、**出力した内容の最後に自動的に改行を追加する**という特徴があります。
 
+<br>
+
 ### 構文の意味
 
 `System.out.println()`も、いくつかの要素で構成されています。
@@ -138,6 +151,8 @@ Hello World
 フィールドとは、クラスが持つデータなどを表す変数のことです。
 
 今の段階では、`System.out.println()`を使うことで文字や数値を出力できると理解しておけば十分です。
+
+<br>
 
 ### 文字列と数値の違い
 
@@ -156,9 +171,13 @@ System.out.println(100);
 `"100"`は文字列、`100`は整数として扱われます。<br>
 見た目が似ていても、プログラム内部での扱いは異なります。
 
+<br><br>
+
 ## Hello Worldを出力してみよう
 
 ここまで学んだクラス、`main`メソッド、`System.out.println()`を組み合わせて、実際にプログラムを作成してみましょう。
+
+<br>
 
 ### サンプルコード
 
@@ -170,11 +189,15 @@ public class Main {
 }
 ```
 
+<br>
+
 ### 出力結果
 
 ```text
 Hello World
 ```
+
+<br>
 
 ### コードの動作
 
@@ -189,6 +212,8 @@ Hello World
 ここで重要なのは、**クラスとメソッドの波括弧がそれぞれ対応していること**です。
 
 外側の`{ }`はクラスの範囲を、内側の`{ }`は`main`メソッドの範囲を表します。
+
+<br>
 
 ### Javaプログラムを実行する方法
 
@@ -205,6 +230,8 @@ java Main
 
 コンパイルとは、ソースコードをJava仮想マシンが実行できる形式に変換する処理です。<br>
 コンパイルに成功すると`Main.class`というファイルが生成され、`java Main`で実行できます。
+
+<br><br>
 
 ## print()とprintln()の違い
 
@@ -229,12 +256,16 @@ public class Main {
 }
 ```
 
+<br>
+
 ### 出力結果
 
 ```text
 Hello World!
 Java 17
 ```
+
+<br>
 
 ### なぜこの結果になるのか？
 
@@ -248,6 +279,8 @@ Java 17
 
 なお、`Hello `の末尾には半角スペースが入っています。<br>
 このスペースがなければ、出力結果は`HelloWorld!`になります。
+
+<br><br>
 
 ## 初心者が間違えやすいポイント
 
@@ -265,6 +298,8 @@ System.out.println(Hello World);
 System.out.println("Hello World");
 ```
 
+<br>
+
 ### ② セミコロンを忘れる
 
 Javaでは、通常、文の終わりにセミコロン（`;`）を記述します。
@@ -275,11 +310,15 @@ System.out.println("Hello World");
 
 セミコロンを書き忘れると、コンパイルエラーになります。
 
+<br>
+
 ### ③ 大文字と小文字を間違える
 
 Javaでは、大文字と小文字が区別されます。
 
 例えば、`System`を`system`と書いたり、`println`を`Println`と書いたりすると、正しく認識されません。
+
+<br>
 
 ### ④ 波括弧の対応を間違える
 
@@ -295,9 +334,13 @@ public class Main {
 }
 ```
 
+<br><br>
+
 ## 練習問題
 
 今回学んだ`print()`と`println()`を使って、次の出力結果になるプログラムを作成してください。
+
+<br>
 
 ### 問題
 
@@ -324,6 +367,8 @@ Let's learn Java.
 
 </details>
 
+<br>
+
 ### 解答例
 
 ```java
@@ -336,6 +381,8 @@ public class Main {
 }
 ```
 
+<br>
+
 ### 解説
 
 最初の`print()`は改行しないため、続く`println()`の内容が同じ行に表示されます。
@@ -344,6 +391,8 @@ public class Main {
 このように、`print()`と`println()`を組み合わせることで、出力する位置を調整できます。
 
 また、今回の練習では`Main`クラスと`main`メソッドも自分で記述することで、Javaプログラムの基本構造を復習できます。
+
+<br><br>
 
 ## まとめ
 
@@ -359,9 +408,10 @@ public class Main {
 
 まずは自分でコードを書き、文字列を変更しながら出力結果を確認してみましょう。
 
+<br><br>
+
 ## 参考資料
 
 - [Oracle Java SE 17 API - PrintStream](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/PrintStream.html)
 - [Dev.java - Classes and Objects](https://dev.java/learn/classes-objects/)
 - [Dev.java - More on Classes](https://dev.java/learn/language/oop/classes-objects/more-on-classes/)
-
