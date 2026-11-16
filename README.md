@@ -42,3 +42,5 @@ Javaをこれから学ぶ方、基礎を復習したい方など、どなたで�
 [【Java入門】文字列をつなぐ5つの方法｜+・concat()・join()・StringBuilderの使い分け](https://github.com/HaruK0720/Java-Introduction/blob/main/010-java-string-concatenation-concat-join-stringbuilder-append.md)
 
 [【Java入門】変数の宣言・初期化・代入・再代入の基本](https://github.com/HaruK0720/Java-Introduction/blob/main/011-java-variable-declaration-initialization-reassignment.md)
+
+[Java入門】変数名の付け方を解説｜使える文字・予約語・キャメルケースの基本](https://github.com/HaruK0720/Java-Introduction/blob/main/012-java-variable-naming-rules-keywords-camelcase.md)
